@@ -1,0 +1,75 @@
+// General classes
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.color-blue {
+  color: #42a9ed;
+}
+
+// btn
+.btn-blue {
+  background: #3e9cdc;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 0.25s;
+  overflow: hidden;
+  &:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 200px;
+    margin-left: 50px;
+    background: #fff;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0.5) 100%
+    );
+    left: -40px;
+    top: -100px;
+    z-index: 1;
+    transform: rotate(45deg);
+    position: absolute;
+    animation: movingFlare 3s ease-in-out 0.05s infinite;
+  }
+//   Button animation
+
+  @keyframes movingFlare {
+    0% {
+      left: -30px;
+      margin-left: 0px;
+    }
+    30% {
+      left: 110%;
+      margin-left: 80px;
+    }
+    100% {
+      left: 110%;
+      margin-left: 80px;
+    }
+  }
+  &:hover {
+    background: #ffffff;
+    border: 1px solid #6f6d7b;
+    color: #2a2b30;
+    transition-duration: 0.25s;
+  }
+}
+.btn-white {
+  background: #ffffff;
+  border: 1px solid #6f6d7b;
+  color: #2a2b30;
+  cursor: pointer;
+  transition-duration: 0.25s;
+  &:hover {
+    background: #3e9cdc;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    transition-duration: 0.25s;
+  }
+}
