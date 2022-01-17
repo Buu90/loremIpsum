@@ -167,7 +167,7 @@
         &::after {
           width: 10px;
           height: 10px;
-          background: url('/img/ordering/arrow.svg') no-repeat center / cover;
+          background: url('../img/ordering/arrow.svg') no-repeat center / cover;
           position: absolute;
           right: 20px;
           bottom: 50%;
@@ -182,7 +182,7 @@
           border: 1px solid #3a3c4c;
           padding-bottom: 16px;
           &::after {
-            background: url('/img/ordering/arrow-white.svg') no-repeat center /
+            background: url('../img/ordering/arrow-white.svg') no-repeat center /
               cover;
             transform: translateY(50%) rotate(360deg);
           }
