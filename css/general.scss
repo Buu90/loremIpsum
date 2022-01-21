@@ -17,6 +17,7 @@
   position: relative;
   transition-duration: 0.25s;
   overflow: hidden;
+  z-index: 0;
   &:after {
     content: "";
     display: block;
