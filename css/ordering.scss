@@ -200,6 +200,7 @@
         scrollbar-color: dark;
         scrollbar-width: thin;
         border: 2px solid #3d4050;
+        z-index: 5;
         &::-webkit-scrollbar {
           width: 7px;
           background-color: #3d4050;
